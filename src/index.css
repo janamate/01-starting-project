@@ -119,9 +119,26 @@ header h1 {
   background: #f8e59c;
 }
 
+#question progress.correct {
+  background: #5af59d;
+}
+
+#question progress.wrong {
+  background: #f55a98;
+}
+
 #question progress.answered::-webkit-progress-value {
   background: #f8e59c;
 }
+
+#question progress.correct::-webkit-progress-value {
+  background: #5af59d;
+}
+
+#question progress.wrong::-webkit-progress-value {
+  background: #f55a98;
+}
+
 
 #question progress.answered::-webkit-progress-bar {
   background: #6a558a;
@@ -323,6 +340,12 @@ header h1 {
   margin-left: 0.2rem;
   letter-spacing: 0.1rem;
 }
+
+#summary-stats .wrong {color: #f55a98;}
+#summary-stats .correct {color: #5af59d}
+#summary-stats .skipped {color: #ebe7ef;}
+
+
 
 @keyframes slide-in-from-bottom {
   0% {
